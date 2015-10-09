@@ -1,0 +1,13 @@
+
+dos常用命令：
+  --dir (directory):列出当前目录下的文件以及文件夹
+  --md(make directory): 创建目录
+  --rd(remove directory): 删除目录
+  --cd(change directory): 进入指定目录
+  --cd.. ：退回到上一级目录
+  --cd\ :返回根目录
+  --exit: 退出dos命令
+  
+  java严格区分大小写
+  
+   byte,short,char之间不会相互转换，他们三者在计算时首先转换为int类型。
