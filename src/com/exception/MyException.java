@@ -3,7 +3,7 @@ package com.exception;
  *
  * @Message:  created by Liujishuai on 2015年10月10日
  * 
- * @Description:
+ * @Description: 自定义异常
  */
 public class MyException extends RuntimeException{
 
