@@ -8,50 +8,50 @@ import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
  *
  * @Message:  created by Liujishuai on 2015年10月15日
  * 
- * @Description:
+ * @Description: SHA家族系列加密算法 SHA1以及SHA2（SHA256，SHA384，SHA512）
  */
 public class SHA_Encode {
 	 /** 
-     * SHA-1消息摘要算法 
+     * SHA-1加密算法 
      */  
     public static String encodeSHA(String data,String salt) throws Exception {  
         // 初始化MessageDigest,SHA即SHA-1的简称  
         MessageDigest md = MessageDigest.getInstance("SHA");  
-        // 执行摘要方法  
+        // 执行加密算法 
         byte[] digest = md.digest((data+salt).getBytes("UTF-8"));  
         return new HexBinaryAdapter().marshal(digest);  
     }  
   
     /** 
-     * SHA-256消息摘要算法 
+     * SHA-256加密算法 
      */  
     public static String encodeSHA256(String data,String salt) throws Exception {  
-        // 初始化MessageDigest,SHA即SHA-1的简称  
+        // 初始化MessageDigest
         MessageDigest md = MessageDigest.getInstance("SHA-256");  
-        // 执行摘要方法  
+        // 执行加密算法 
         byte[] digest = md.digest((data+salt).getBytes("UTF-8"));  
         return new HexBinaryAdapter().marshal(digest);  
         
     }  
   
     /** 
-     * SHA-384消息摘要算法 
+     * SHA-384加密算法 
      */  
     public static String encodeSHA384(String data,String salt) throws Exception {  
-        // 初始化MessageDigest,SHA即SHA-1的简称  
+        // 初始化MessageDigest
         MessageDigest md = MessageDigest.getInstance("SHA-384");  
-        // 执行摘要方法  
+        // 执行加密算法 
         byte[] digest = md.digest((data+salt).getBytes("UTF-8"));  
         return new HexBinaryAdapter().marshal(digest);  
     }  
   
     /** 
-     * SHA-512消息摘要算法 
+     * SHA-512加密算法 
      */  
     public static String encodeSHA512(String data,String salt) throws Exception {  
-        // 初始化MessageDigest,SHA即SHA-1的简称  
+        // 初始化MessageDigest
         MessageDigest md = MessageDigest.getInstance("SHA-512");  
-        // 执行摘要方法  
+        // 执行加密算法 
         byte[] digest = md.digest((data+salt).getBytes("UTF-8"));  
         return new HexBinaryAdapter().marshal(digest);  
     }  

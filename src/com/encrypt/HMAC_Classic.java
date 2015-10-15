@@ -16,7 +16,7 @@ import com.exception.MyException;
  *
  * @Message: created by Liujishuai on 2015年10月10日
  * 
- * @Description:
+ * @Description: HMACSHA256经典加密算法
  */
 public class HMAC_Classic {
 
