@@ -1,6 +1,7 @@
 package com.encrypt;
 
 
+import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -43,11 +44,11 @@ public class MD_Encode {
 	   * @return
 	   * @throws Exception
 	   */
-    public static String encodeMd2(byte[] data) throws Exception {  
+    public static String encodeMd2(String data,String salt) throws Exception {  
         // 初始化MessageDigest  
         MessageDigest md = MessageDigest.getInstance("MD2");  
         // 执行摘要信息  
-        byte[] digest = md.digest(data);  
+        byte[] digest = md.digest((data+salt).getBytes("UTF-8"));  
         // 将摘要信息转换为32位的十六进制字符串  
         return new String(new HexBinaryAdapter().marshal(digest));  
     }  
@@ -57,11 +58,11 @@ public class MD_Encode {
    * @return
    * @throws Exception
    */ 
-    public static String encodeMd5(byte[] data) throws Exception {  
+    public static String encodeMd5(String data , String salt) throws Exception {  
         // 初始化MessageDigest  
         MessageDigest md = MessageDigest.getInstance("MD5");  
         // 执行摘要信息  
-        byte[] digest = md.digest(data);  
+        byte[] digest = md.digest((data+salt).getBytes("UTF-8"));  
         // 将摘要信息转换为32位的十六进制字符串  
         return new String(new HexBinaryAdapter().marshal(digest));  
     }  
@@ -100,13 +101,13 @@ public class MD_Encode {
 		        return null;
 	}
 	 // MD5加密 返回十六进制的字符串  
-    public static String encodeApacheMd5Hex(byte[] data) throws Exception {  
-        return DigestUtils.md5Hex(data);  
+    public static String encodeApacheMd5Hex(String data,String salt) throws Exception {  
+        return DigestUtils.md5Hex((data+salt).getBytes("UTF-8"));  
     }  
   
     // MD5加密,返回十进制的字节数组  
-    public static byte[] encodeApacheMd5(byte[] data) {  
-        return DigestUtils.md5(data);  
+    public static byte[] encodeApacheMd5(String data,String salt) throws Exception {  
+        return DigestUtils.md5((data+salt).getBytes("UTF-8"));  
     }  
 }
 
