@@ -1,4 +1,4 @@
-package com.basic_grammar;
+package com.encode;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
