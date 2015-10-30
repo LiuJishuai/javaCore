@@ -15,7 +15,28 @@
 	<artifactId>commons-codec</artifactId>
 	<version>1.9</version>
      </dependency>
-		
+      <!--poi对excel2007以上版本的支持-->
+		 <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.12</version>
+        </dependency>
+        <dependency>
+	<groupId>org.joda</groupId>
+	<artifactId>joda-convert</artifactId>
+	<version>1.7</version>
+</dependency>
+        <dependency>
+	<groupId>javax.mail</groupId>
+	<artifactId>javax.mail-api</artifactId>
+	<version>1.5.4</version>
+</dependency>
+<dependency>
+	<groupId>com.sun.mail</groupId>
+	<artifactId>javax.mail</artifactId>
+	<version>1.5.4</version>
+</dependency>
+        
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
