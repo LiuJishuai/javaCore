@@ -2,6 +2,7 @@ package com.utils;
 import java.io.File;
 import java.util.Date;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
@@ -34,13 +35,13 @@ public class JavaMail {
 
         //邮箱服务器
     //private static final String SMTP_SERVER = "smtp.163.com";
-    private static final String SMTP_SERVER = "smtp.qq.com";
+    private static final String SMTP_SERVER = "smtp.126.com";
     //用户名
-    private static final String APIKey = "liujishuai@supuy.com";
+    private static final String APIKey = "jishuailiu@126.com";
     //密码
-    private static final String APISecret = "*****";
+    private static final String APISecret = "123ljs123";
     //发送来源
-    private static final String EmailFrom="liujishuai@supuy.com";
+    private static final String EmailFrom="jishuailiu@126.com";
     public static void sendEmail(String recipient, String subject,String fileAttachment,String content) throws Exception {
         String ttId=new Date().toString();
         Properties properties = new Properties();
@@ -120,8 +121,11 @@ static class SmtpAuth extends Authenticator {
 }
 
 public static void main(String[] args) throws Exception{
+	for(int i=0;i<500;i++){
+	 Thread.currentThread().sleep(2000L);
+	 sendEmail("liujishuai@supuy.com", "京东物流提醒"+i, null, "我觉得上午去菏泽好点，把你的感觉写下来吧");
+	}
 	
-	sendEmail("534172885@qq.com", "测试一下试试", null, "我觉得上午去菏泽好点，把你的感觉写下来吧");
 }
 	}
 
