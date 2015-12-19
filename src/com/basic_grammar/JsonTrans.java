@@ -28,6 +28,7 @@ public class JsonTrans {
 		// Gson().fromJson(json, clazz)实现json到javaBean的转换
 		Milk milk2 = new Gson().fromJson(gsonString, Milk.class);
 		System.out.println(milk2.getName());
+		
 	}
    /**
     * 使用阿里巴巴fastjson实现JSON和Object转换
