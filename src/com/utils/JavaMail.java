@@ -39,7 +39,7 @@ public class JavaMail {
     //用户名
     private static final String APIKey = "jishuailiu@126.com";
     //密码
-    private static final String APISecret = "123ljs123";
+    private static final String APISecret = "****";
     //发送来源
     private static final String EmailFrom="jishuailiu@126.com";
     public static void sendEmail(String recipient, String subject,String fileAttachment,String content) throws Exception {
