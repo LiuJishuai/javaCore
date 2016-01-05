@@ -5,6 +5,8 @@ package com.utils;
 import java.util.Date;
 
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 /**
  *
@@ -14,6 +16,12 @@ import org.joda.time.DateTime;
  */
 public class DateUtils {
 
+	    public static final DateTimeFormatter standard = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss");
+	    public static final DateTimeFormatter yyyyMMdd = DateTimeFormat.forPattern("yyyyMMdd");
+	    public static final DateTimeFormatter yyyyMM = DateTimeFormat.forPattern("yyyyMM");
+	    public static final DateTimeFormatter date_sdf_wz = DateTimeFormat.forPattern("yyyy年MM月dd日");
+	    public static final DateTimeFormatter time_sdf = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm");
+	    public static final DateTimeFormatter yyyymmddhhmmss = DateTimeFormat.forPattern("yyyyMMddHHmmss");
 	/**
 	 * 获取当前时间时间戳
 	 */
