@@ -41,6 +41,13 @@ public class DateUtils {
 		return new DateTime(date).getMillis()/1000;
 	}
 	/**
+	 * 获取今天零点时间戳
+	 * @return
+	 */
+	public static Long getTodayZeroStamp(){
+		return new DateTime().withTimeAtStartOfDay().getMillis()/1000;
+	}
+	/**
 	 * 获取本月1号零点时间戳
 	 */
 	public static Long getCurrentMonthZeroTimeStamp(){

@@ -28,6 +28,7 @@ public class UtilsTest {
 		System.out.println("指定时间时间戳:"+DateUtils.getUnixTimeStamp(new Date()));
 		System.out.println("当前月份第一天时间戳:"+DateUtils.getCurrentMonthZeroTimeStamp());
 		System.out.println("下个月第一天时间戳:"+DateUtils.getNextMonthZeroStamp());
+		System.out.println("今天零点时间戳:"+DateUtils.getTodayZeroStamp());
 		
 	}
 }
