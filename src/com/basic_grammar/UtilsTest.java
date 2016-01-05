@@ -22,10 +22,13 @@ public class UtilsTest {
 		
 		DateTime dateTime=new DateTime();
 		System.out.println("时间:"+dateTime.toString(DateUtils.yyyyMM));
+		System.out.println("时间2:"+dateTime.toString(DateUtils.date_sdf_wz_e));
+		System.out.println("时间3:"+dateTime.toString(DateUtils.date_sdf_wz_hhmmss_e));
 		System.out.println("当前时间戳:"+DateUtils.getCurrentUnixTimeStamp());
 		System.out.println("指定时间时间戳:"+DateUtils.getUnixTimeStamp(new Date()));
 		System.out.println("当前月份第一天时间戳:"+DateUtils.getCurrentMonthZeroTimeStamp());
 		System.out.println("下个月第一天时间戳:"+DateUtils.getNextMonthZeroStamp());
+		
 	}
 }
 
