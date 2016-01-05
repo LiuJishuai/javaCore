@@ -9,7 +9,7 @@ import com.google.gson.Gson;
  *
  * @Message: created by Liujishuai on 2015年12月19日
  * 
- * @Description:
+ * @Description:json转换，谷歌GSON目前功能最强大，阿里巴巴fastJson性能最高
  */
 public class JsonTrans {
 
