@@ -106,15 +106,15 @@ public class HttpUtils {
      */
     public static void main(String[] args) throws IOException {
     	String urlString="http://192.168.XX.XXX/xx/xxx/member/login";
-//    	
-//         List<NameValuePair> list=new ArrayList<>();
-//         list.add(new BasicNameValuePair("username","xxxxxx"));
-//         list.add(new BasicNameValuePair("password","xxxxxxxxx"));
-//         String sk= post(urlString,list);
-////         XStream xStream=new XStream();
-////         String ss=xStream.fromXML(sk).toString();
-//         System.out.println(sk);
-    	
+    	//post请求
+         List<NameValuePair> list=new ArrayList<>();
+         list.add(new BasicNameValuePair("username","xxxxxx"));
+         list.add(new BasicNameValuePair("password","xxxxxxxxx"));
+         String sk= post(urlString,list);
+//         XStream xStream=new XStream();
+//         String ss=xStream.fromXML(sk).toString();
+         System.out.println(sk);
+    	//get请求
     	String paramString="a=12&b=123";
     	String resString=get(urlString, paramString);
 	}
