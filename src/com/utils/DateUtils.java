@@ -41,7 +41,7 @@ public class DateUtils {
 		return new DateTime(date).getMillis()/1000;
 	}
 	/**
-	 * 获取今天零点时间戳
+	 * 获取今天零点
 	 * @return
 	 */
 	public static Long getTodayZeroStamp(){

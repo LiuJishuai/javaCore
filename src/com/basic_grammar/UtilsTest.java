@@ -21,6 +21,9 @@ public class UtilsTest {
 	public void testDateUtils(){
 		
 		DateTime dateTime=new DateTime();
+		DateTime now=DateTime.now();
+		System.out.println("时间啊："+dateTime);
+		System.out.println("时间啊："+now);
 		System.out.println("时间:"+dateTime.toString(DateUtils.yyyyMM));
 		System.out.println("时间2:"+dateTime.toString(DateUtils.date_sdf_wz_e));
 		System.out.println("时间3:"+dateTime.toString(DateUtils.date_sdf_wz_hhmmss_e));

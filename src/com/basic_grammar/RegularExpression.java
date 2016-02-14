@@ -38,5 +38,30 @@ public class RegularExpression {
 		System.out.println("匹配4444:"+"+222".matches(style4));
 		
 	}
+	/**
+	 * 测试switch
+	 */
+	@Test
+	public void testSwitch(){
+		    int temp=60;
+	        Integer t=0;
+	        t=temp%5==0?5:t;
+	        t=temp%15==0?15:t;
+	        t=temp%30==0?30:t;
+	       switch (t) {
+		    case 30:
+		    	 System.out.println("测试结果:"+t);
+			break;
+		    case 15:
+		    	 System.out.println("测试结果:"+t);
+			break;
+		    case 5:
+		    	 System.out.println("测试结果:"+t);
+			break;
+		default:
+			break;
+		}
+
+	}
 }
 
