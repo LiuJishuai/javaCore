@@ -132,8 +132,6 @@ public class StringUtil {
 	/**
 	 * 随即生成指定位数的含数字验证码字符串
 	 * (这里RandomStringUtils需要引用org.apache.commons包）
-	 * @author Peltason
-	 * @date 2007-5-9
 	 * @param bit
 	 *            指定生成验证码位数
 	 * @return String
@@ -149,9 +147,6 @@ public class StringUtil {
 	/**
 	 * 随即生成指定位数的含验证码字符串
 	 * (这里RandomStringUtils需要引用org.apache.commons包）
-	 * @author Peltason
-	 * 
-	 * @date 2007-5-9
 	 * @param bit
 	 *            指定生成验证码位数
 	 * @return String
