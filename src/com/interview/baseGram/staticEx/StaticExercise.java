@@ -1,11 +1,12 @@
-package com.basic_grammar;
+package com.interview.baseGram.staticEx;
+
+import static com.interview.baseGram.staticTx.MyStaticImportTest.getMyWords;
+import static com.interview.baseGram.staticTx.MyStaticImportTest.number;
 
 import java.rmi.server.Skeleton;
 
 import org.junit.Test;
 import org.junit.experimental.theories.Theories;
-import static com.generic.MyStaticImportTest.number;
-import static com.generic.MyStaticImportTest.getMyWords;
 
 /**
  *

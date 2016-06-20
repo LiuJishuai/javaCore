@@ -1,4 +1,4 @@
-package com.generic;
+package com.interview.baseGram.staticTx;
 /**
  *
  * @Message:  created by Liujishuai on 2016年6月18日
